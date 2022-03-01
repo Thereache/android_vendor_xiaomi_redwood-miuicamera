@@ -23,4 +23,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/haydn-miuicamera/configs/sysconfig/miuicamera-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/miuicamera-hiddenapi-package-whitelist.xml
 
+# Props
+PRODUCT_PRODUCT_PROPERTIES += \
+	ro.hardware.camera=xiaomi
+
 $(call inherit-product, vendor/xiaomi/haydn-miuicamera/common/common-vendor.mk)
