@@ -14,4 +14,6 @@
 # limitations under the License.
 #
 
+BOARD_VENDOR_SEPOLICY_DIRS += vendor/xiaomi/haydn-miuicamera/sepolicy/vendor
+
 include vendor/xiaomi/haydn-miuicamera/common/BoardConfigVendor.mk
