@@ -34,6 +34,7 @@ sed -i 's|vendor/xiaomi/haydn-miuicamera/|vendor/xiaomi/haydn-miuicamera/common|
 sed -i 's|device/xiaomi/haydn-miuicamera//setup-makefiles.sh|vendor/xiaomi/haydn-miuicamera/setup-makefiles.sh|g' "${ANDROIDBP}" "${ANDROIDMK}" "${BOARDMK}" "${PRODUCTMK}"
 
 write_makefiles "${MY_DIR}/proprietary-files.txt" true
+sed -i 's|"xiaomi/haydn-miuicamera"|"xiaomi"|g' "${ANDROIDBP}"
 
 # Finish
 write_footers

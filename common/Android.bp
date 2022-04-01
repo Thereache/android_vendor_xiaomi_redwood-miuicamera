@@ -7,7 +7,7 @@ soong_namespace {
 
 android_app_import {
 	name: "MiuiCamera",
-	owner: "xiaomi/haydn-miuicamera",
+	owner: "xiaomi",
 	apk: "proprietary/system/priv-app/MiuiCamera/MiuiCamera.apk",
 	certificate: "platform",
 	dex_preopt: {
