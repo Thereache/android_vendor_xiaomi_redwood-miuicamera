@@ -5,3 +5,6 @@
 PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/haydn-miuicamera/common
 
+
+PRODUCT_PACKAGES += \
+    MiuiCamera
