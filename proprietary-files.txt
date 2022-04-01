@@ -1,3 +1,3 @@
 # All unpinned blobs below are extracted from miui_HAYDNGlobal_V13.0.1.0.SKKMIXM
 
--system/priv-app/MiuiCamera/MiuiCamera.apk
+-system/priv-app/MiuiCamera/MiuiCamera.apk;OVERRIDES=Snap,Camera2,GoogleCameraGo
