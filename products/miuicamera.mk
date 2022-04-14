@@ -25,8 +25,7 @@ PRODUCT_COPY_FILES += \
 
 # Props
 PRODUCT_PRODUCT_PROPERTIES += \
-	ro.com.google.lens.oem_camera_package=com.android.camera \
-	ro.hardware.camera=xiaomi
+	ro.com.google.lens.oem_camera_package=com.android.camera
 
 PRODUCT_SYSTEM_PROPERTIES += \
     persist.vendor.camera.privapp.list=com.android.camera \
