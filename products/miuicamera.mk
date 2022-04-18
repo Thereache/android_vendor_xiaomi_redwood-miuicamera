@@ -32,6 +32,7 @@ PRODUCT_SYSTEM_PROPERTIES += \
     vendor.camera.aux.packagelist=com.android.camera
 
 PRODUCT_PACKAGES += \
+    DisableCamera2 \
     DisableMiuiCamera
 
 $(call inherit-product, vendor/xiaomi/haydn-miuicamera/common/common-vendor.mk)
