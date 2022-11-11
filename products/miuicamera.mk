@@ -29,7 +29,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 PRODUCT_SYSTEM_PROPERTIES += \
     persist.vendor.camera.privapp.list=com.android.camera \
-    vendor.camera.aux.packagelist=com.android.camera
+    vendor.camera.aux.packagelist=com.android.camera,org.pixelexperience.faceunlock
 
 PRODUCT_PACKAGES += \
     DisableCamera2 \
