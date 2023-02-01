@@ -33,5 +33,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/haydn-miuicamera/common/proprietary/vendor/lib64/vendor.qti.hardware.camera.device@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.device@1.0.so \
     vendor/xiaomi/haydn-miuicamera/common/proprietary/vendor/lib64/vendor.qti.hardware.camera.device@3.5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.device@3.5.so
 
+TARGET_USE_PREBUILD_CAMERA_SERVICE ?= false
+ifeq ($(TARGET_USE_PREBUILD_CAMERA_SERVİCE),true)
+PRODUCT_COPY_FILES += \
+    vendor/xiaomi/haydn-miuicamera/common/proprietary/system/lib64/libcameraservice.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libcameraservice.so
+endif
+
 PRODUCT_PACKAGES += \
     MiuiCamera

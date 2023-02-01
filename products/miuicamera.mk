@@ -23,16 +23,26 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/haydn-miuicamera/configs/sysconfig/miuicamera-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/miuicamera-hiddenapi-package-whitelist.xml
 
+# Miui Camera init rc file
+PRODUCT_COPY_FILES += \
+    vendor/xiaomi/haydn-miuicamera/init/init.miuicamera.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.miuicamera.rc
+
 # Props
 PRODUCT_PRODUCT_PROPERTIES += \
 	ro.com.google.lens.oem_camera_package=com.android.camera
 
 PRODUCT_SYSTEM_PROPERTIES += \
-    persist.vendor.camera.privapp.list=com.android.camera \
-    vendor.camera.aux.packagelist=com.android.camera,org.pixelexperience.faceunlock
+    vendor.camera.aux.packagelist=com.android.camera,org.pixelexperience.faceunlock \
+    persist.vendor.camera.privapp.list=com.android.camera
+
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.hardware.camera=xiaomi
 
 PRODUCT_PACKAGES += \
     DisableCamera2 \
-    DisableMiuiCamera
+    DisableMiuiCamera \
+    MiuiCameraOverlayLos \
+    MiuiCameraOverlayAosp
+
 
 $(call inherit-product, vendor/xiaomi/haydn-miuicamera/common/common-vendor.mk)
