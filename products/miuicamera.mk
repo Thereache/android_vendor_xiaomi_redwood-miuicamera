@@ -44,5 +44,4 @@ PRODUCT_PACKAGES += \
     MiuiCameraOverlayLos \
     MiuiCameraOverlayAosp
 
-
 $(call inherit-product, vendor/xiaomi/haydn-miuicamera/common/common-vendor.mk)
