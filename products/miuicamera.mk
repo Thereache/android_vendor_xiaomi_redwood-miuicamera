@@ -39,7 +39,6 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.hardware.camera=xiaomi
 
 PRODUCT_PACKAGES += \
-    DisableCamera2 \
     DisableMiuiCamera \
     MiuiCameraOverlayLos \
     MiuiCameraOverlayAosp
