@@ -9,7 +9,7 @@ android_app_import {
 	name: "MiuiCamera",
 	owner: "xiaomi",
 	apk: "proprietary/system/priv-app/MiuiCamera/MiuiCamera.apk",
-	overrides: ["GrapheneCamera", "Camera2", "Aperture"],
+	overrides: ["GrapheneCamera", "Camera", "Camera2", "Aperture"],
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -17,3 +17,13 @@ android_app_import {
 	privileged: true,
 }
 
+android_app_import {
+    name: "MiuiScanner",
+    owner: "xiaomi",
+    apk: "proprietary/system/priv-app/MiuiScanner/MiuiScanner.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+}

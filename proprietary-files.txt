@@ -1,30 +1,12 @@
 # All unpinned blobs below are extracted from miui_HAYDNGlobal_V13.0.1.0.SKKMIXM
 
--system/priv-app/MiuiCamera/MiuiCamera.apk;OVERRIDES=GrapheneCamera,Camera2,Aperture
+system/priv-app/MiuiCamera/MiuiCamera.apk;OVERRIDES=GrapheneCamera,Camera,Camera2,Aperture
+system/priv-app/MiuiScanner/MiuiScanner.apk
 system/lib64/android.hardware.camera.common@1.0.so
 system/lib64/libcamera_algoup_jni.xiaomi.so
 system/lib64/libcamera_mianode_jni.xiaomi.so
-system/lib64/libcameraservice.so
-system/lib64/libdoc_photo.so
-system/lib64/libdoc_photo_c++_shared.so
 system/lib64/libhidltransport.so
 system/lib64/libmicampostproc_client.so
-system/lib64/libmotion_photo.so
-system/lib64/libmotion_photo_c++_shared.so
-system/lib64/libmotion_photo_mace.so
 system/lib64/libopencl-camera.so
 system/lib64/vendor.xiaomi.hardware.campostproc@1.0.so
-system_ext/lib64/libcameraimpl.so
-vendor/lib64/camera.device@1.0-impl.so
-vendor/lib64/camera.device@3.2-impl.so
-vendor/lib64/camera.device@3.3-impl.so
-vendor/lib64/camera.device@3.4-external-impl.so
-vendor/lib64/camera.device@3.4-impl.so
-vendor/lib64/camera.device@3.5-external-impl.so
-vendor/lib64/camera.device@3.5-impl.so
-vendor/lib64/camera.device@3.6-external-impl.so
 vendor/lib64/libSNPE.so:system/lib64/libSNPE.so
-vendor/lib64/vendor.qti.hardware.camera.device@1.0.so
-vendor/lib64/vendor.qti.hardware.camera.device@3.5.so
-vendor/lib/vendor.qti.hardware.camera.device@1.0.so
-vendor/lib/vendor.qti.hardware.camera.device@3.5.so
