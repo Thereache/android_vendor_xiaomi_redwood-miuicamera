@@ -6,7 +6,6 @@
         <permission name="android.permission.READ_COMPAT_CHANGE_CONFIG" />
         <permission name="mediatek.permission.ACCESS_APU_SYS"/>
         <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
-
         <!-- Camera -->
         <permission name="android.permission.CAMERA" />
         <!-- Location -->

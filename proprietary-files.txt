@@ -1,12 +1,24 @@
-# All unpinned blobs below are extracted from miui_HAYDNGlobal_V13.0.1.0.SKKMIXM
+# All unpinned blobs below are extracted from miui_HAYDNGlobal_V14.0.3.0.TKKMIXM
 
-system/priv-app/MiuiCamera/MiuiCamera.apk;OVERRIDES=GrapheneCamera,Camera,Camera2,Aperture
-system/priv-app/MiuiScanner/MiuiScanner.apk
-system/lib64/android.hardware.camera.common@1.0.so
+product/priv-app/MiuiCamera/MiuiCamera.apk:system/priv-app/MiuiCamera/MiuiCamera.apk;OVERRIDES=GrapheneCamera,Camera,Camera2,Aperture
 system/lib64/libcamera_algoup_jni.xiaomi.so
 system/lib64/libcamera_mianode_jni.xiaomi.so
-system/lib64/libhidltransport.so
+system/lib64/libgui.so:system/lib64/libgui-xiaomi.so
 system/lib64/libmicampostproc_client.so
-system/lib64/libopencl-camera.so
 system/lib64/vendor.xiaomi.hardware.campostproc@1.0.so
 vendor/lib64/libSNPE.so:system/lib64/libSNPE.so
+system_ext/lib64/libopencl-camera.so:system/lib64/libOpenCL.so
+vendor/lib64/camera.device@1.0-impl.so
+vendor/lib64/camera.device@3.2-impl.so
+vendor/lib64/camera.device@3.3-impl.so
+vendor/lib64/camera.device@3.4-external-impl.so
+vendor/lib64/camera.device@3.4-impl.so
+vendor/lib64/camera.device@3.5-external-impl.so
+vendor/lib64/camera.device@3.5-impl.so
+vendor/lib64/camera.device@3.6-external-impl.so
+vendor/lib64/android.hardware.graphics.allocator@3.0.so
+vendor/lib64/vendor.qti.hardware.camera.device@1.0.so
+vendor/lib64/vendor.qti.hardware.camera.device@3.5.so
+vendor/lib/android.hardware.graphics.allocator@3.0.so
+vendor/lib/vendor.qti.hardware.camera.device@1.0.so
+vendor/lib/vendor.qti.hardware.camera.device@3.5.so

@@ -17,24 +17,25 @@
 # Permissions
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/haydn-miuicamera/configs/default-permissions/miuicamera-permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/default-permissions/miuicamera-permissions.xml \
-    vendor/xiaomi/haydn-miuicamera/configs/permissions/privapp-permissions-miuicamera.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-miuicamera.xml
+    vendor/xiaomi/haydn-miuicamera/configs/permissions/privapp-permissions-miuicamera.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-miuicamera.xml	
 
 # Sysconfig
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/haydn-miuicamera/configs/sysconfig/miuicamera-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/miuicamera-hiddenapi-package-whitelist.xml
 
 # Props
-PRODUCT_PRODUCT_PROPERTIES += \
-	ro.com.google.lens.oem_camera_package=com.android.camera
-
 PRODUCT_SYSTEM_PROPERTIES += \
-	ro.product.mod_device=haydn_global \
-    vendor.camera.aux.packagelist=com.android.camera,org.pixelexperience.faceunlock \
-    persist.vendor.camera.privapp.list=com.android.camera
+    persist.log.tag.HapticCompat=S \
+    persist.log.tag.CAM_CameraUtil=S \
+    persist.log.tag.OneHopHelper=S \
+    persist.log.tag.DeviceUtils=S \
+    persist.log.tag.CAM_BoostFrameworkImpl=S \
+    ro.product.mod_device=haydn_in_global \
+    persist.vendor.camera.privapp.list=com.android.camera \
+    ro.com.google.lens.oem_camera_package=com.android.camera \
+    vendor.camera.aux.packagelist=com.android.camera,org.pixelexperience.faceunlock
 
-PRODUCT_VENDOR_PROPERTIES += \
-    ro.hardware.camera=xiaomi
-
+# Overlay
 PRODUCT_PACKAGES += \
     MiuiCameraOverlayLos \
     MiuiCameraOverlayAosp
