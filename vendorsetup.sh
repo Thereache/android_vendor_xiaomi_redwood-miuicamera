@@ -1,1 +1,2 @@
 cat vendor/xiaomi/haydn-miuicamera/common/proprietary/system/priv-app/MiuiCamera/MiuiCamera.apk.part* > vendor/xiaomi/haydn-miuicamera/common/proprietary/system/priv-app/MiuiCamera/MiuiCamera.apk
+cat vendor/xiaomi/haydn-miuicamera/common/proprietary/system/priv-app/MiuiVideoPlayer/MiuiVideoPlayer.apk.part* > vendor/xiaomi/haydn-miuicamera/common/proprietary/system/priv-app/MiuiVideoPlayer/MiuiVideoPlayer.apk

@@ -17,7 +17,8 @@
 # Permissions
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/haydn-miuicamera/configs/default-permissions/miuicamera-permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/default-permissions/miuicamera-permissions.xml \
-    vendor/xiaomi/haydn-miuicamera/configs/permissions/privapp-permissions-miuicamera.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-miuicamera.xml	
+    vendor/xiaomi/haydn-miuicamera/configs/permissions/privapp-permissions-miuicamera.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-miuicamera.xml \
+    vendor/xiaomi/haydn-miuicamera/configs/permissions/privapp-permissions-miuivideoplayer.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-miuivideoplayer.xml
 
 # Sysconfig
 PRODUCT_COPY_FILES += \
