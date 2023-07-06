@@ -4,9 +4,7 @@ binder_call(platform_app, hal_camera_default)
 
 allow platform_app cgroup:file r_file_perms;
 
-allow platform_app hal_misys_hwservice:hwservice_manager find;
-
 allow platform_app miui_multi_display:service_manager find;
 
 # Allow to access proc/stat
-allow platform_app proc_stat:file read;
+allow platform_app proc_stat:file r_file_perms;
