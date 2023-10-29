@@ -33,12 +33,15 @@ PRODUCT_SYSTEM_PROPERTIES += \
     persist.log.tag.CAM_BoostFrameworkImpl=S \
     ro.product.mod_device=haydn_in_global \
     persist.vendor.camera.privapp.list=com.android.camera \
-    ro.com.google.lens.oem_camera_package=com.android.camera \
-    vendor.camera.aux.packagelist=com.android.camera,org.pixelexperience.faceunlock
+    ro.com.google.lens.oem_camera_package=com.android.camera
 
 # Overlay
 PRODUCT_PACKAGES += \
     MiuiCameraOverlayLos \
     MiuiCameraOverlayAosp
+
+# Shim
+PRODUCT_PACKAGES += \
+    libgui_shim_leicamera
 
 $(call inherit-product, vendor/xiaomi/haydn-miuicamera/common/common-vendor.mk)

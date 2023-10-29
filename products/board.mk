@@ -20,5 +20,6 @@ BOARD_VENDOR_SEPOLICY_DIRS += vendor/xiaomi/haydn-miuicamera/sepolicy/vendor
 BUILD_BROKEN_DUP_RULES := true
 
 TARGET_CAMERA_USES_NEWER_HIDL_OVERRIDE_FORMAT := true
+TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED := true
 
 include vendor/xiaomi/haydn-miuicamera/common/BoardConfigVendor.mk
