@@ -8,6 +8,7 @@
         <item>org.lineageos.aperture</item>
         <item>org.lineageos.aperture.dev</item>
         <item>com.crdroid.faceunlock</item>
-        <item>org.pixelexperience.faceunlock</item>
+	<item>org.pixelexperience.faceunlock</item>
+	<item>co.aospa.sense</item>
     </string-array>
 </resources>
