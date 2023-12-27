@@ -40,6 +40,15 @@ PRODUCT_PACKAGES += \
     MiuiCameraOverlayLos \
     MiuiCameraOverlayAosp
 
+# QR Camera
+PRODUCT_PACKAGES += \
+    MlkitBarcodeUI \
+    VisionBarcode \
+    MiuiQRCameraOverlay
+
+DEVICE_PACKAGE_OVERLAYS += \
+    vendor/xiaomi/haydn-miuicamera/overlay
+
 # Shim
 PRODUCT_PACKAGES += \
     libgui_shim_leicamera
