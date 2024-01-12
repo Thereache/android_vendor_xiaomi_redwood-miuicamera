@@ -37,6 +37,7 @@ PRODUCT_SYSTEM_PROPERTIES += \
 
 # Overlay
 PRODUCT_PACKAGES += \
+    MiuiCameraOverlay \
     MiuiCameraOverlayLos \
     MiuiCameraOverlayAosp
 
