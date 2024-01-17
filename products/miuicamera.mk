@@ -20,13 +20,13 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 
 # Permissions
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/haydn-miuicamera/configs/default-permissions/miuicamera-permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/default-permissions/miuicamera-permissions.xml \
-    vendor/xiaomi/haydn-miuicamera/configs/permissions/privapp-permissions-miuicamera.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-miuicamera.xml \
-    vendor/xiaomi/haydn-miuicamera/configs/permissions/privapp-permissions-miuivideoplayer.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-miuivideoplayer.xml
+    vendor/xiaomi/redwood-miuicamera/configs/default-permissions/miuicamera-permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/default-permissions/miuicamera-permissions.xml \
+    vendor/xiaomi/redwood-miuicamera/configs/permissions/privapp-permissions-miuicamera.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-miuicamera.xml \
+    vendor/xiaomi/redwood-miuicamera/configs/permissions/privapp-permissions-miuivideoplayer.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-miuivideoplayer.xml
 
 # Sysconfig
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/haydn-miuicamera/configs/sysconfig/miuicamera-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/miuicamera-hiddenapi-package-whitelist.xml
+    vendor/xiaomi/redwood-miuicamera/configs/sysconfig/miuicamera-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/miuicamera-hiddenapi-package-whitelist.xml
 
 # Props
 PRODUCT_SYSTEM_PROPERTIES += \
@@ -36,7 +36,7 @@ PRODUCT_SYSTEM_PROPERTIES += \
     persist.log.tag.DeviceUtils=S \
     persist.log.tag.CAM_BoostFrameworkImpl=S \
     ro.miui.notch=1 \
-    ro.product.mod_device=haydn_in_global \
+    ro.product.mod_device=redwood_global \
     persist.vendor.camera.privapp.list=com.android.camera \
     ro.com.google.lens.oem_camera_package=com.android.camera
 
@@ -53,10 +53,10 @@ PRODUCT_PACKAGES += \
     MiuiQRCameraOverlay
 
 DEVICE_PACKAGE_OVERLAYS += \
-    vendor/xiaomi/haydn-miuicamera/overlay
+    vendor/xiaomi/redwood-miuicamera/overlay
 
 # Shim
 PRODUCT_PACKAGES += \
     libgui_shim_leicamera
 
-$(call inherit-product, vendor/xiaomi/haydn-miuicamera/common/common-vendor.mk)
+$(call inherit-product, vendor/xiaomi/redwood-miuicamera/common/common-vendor.mk)

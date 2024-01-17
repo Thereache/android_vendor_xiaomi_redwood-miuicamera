@@ -8,7 +8,7 @@
 set -e
 
 DEVICE=common
-VENDOR=xiaomi/haydn-miuicamera
+VENDOR=xiaomi/redwood-miuicamera
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
@@ -29,11 +29,11 @@ setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" true
 # Warning headers and guards
 write_headers "arm64"
 sed -i 's|TARGET_DEVICE|TARGET_ARCH|g' "${ANDROIDMK}"
-sed -i 's|vendor/xiaomi/haydn-miuicamera/|vendor/xiaomi/haydn-miuicamera/common|g' "${PRODUCTMK}"
-sed -i 's|device/xiaomi/haydn-miuicamera//setup-makefiles.sh|vendor/xiaomi/haydn-miuicamera/setup-makefiles.sh|g' "${ANDROIDBP}" "${ANDROIDMK}" "${BOARDMK}" "${PRODUCTMK}"
+sed -i 's|vendor/xiaomi/redwood-miuicamera/|vendor/xiaomi/redwood-miuicamera/common|g' "${PRODUCTMK}"
+sed -i 's|device/xiaomi/redwood-miuicamera//setup-makefiles.sh|vendor/xiaomi/redwood-miuicamera/setup-makefiles.sh|g' "${ANDROIDBP}" "${ANDROIDMK}" "${BOARDMK}" "${PRODUCTMK}"
 
 write_makefiles "${MY_DIR}/proprietary-files.txt" true
-sed -i 's|"xiaomi/haydn-miuicamera"|"xiaomi"|g' "${ANDROIDBP}"
+sed -i 's|"xiaomi/redwood-miuicamera"|"xiaomi"|g' "${ANDROIDBP}"
 
 # Finish
 write_footers
