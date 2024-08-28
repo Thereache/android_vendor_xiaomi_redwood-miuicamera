@@ -55,8 +55,4 @@ PRODUCT_PACKAGES += \
 DEVICE_PACKAGE_OVERLAYS += \
     vendor/xiaomi/redwood-miuicamera/overlay
 
-# Shim
-PRODUCT_PACKAGES += \
-    libgui_shim_leicamera
-
 $(call inherit-product, vendor/xiaomi/redwood-miuicamera/common/common-vendor.mk)
