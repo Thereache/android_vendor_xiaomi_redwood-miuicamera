@@ -1,9 +1,9 @@
-# All unpinned blobs below are extracted from redwood global V14.0.7.0.TMSMIXM
+# All unpinned blobs below are extracted from redwood global V816.0.5.0.UMSMIXM
 
 product/priv-app/MiuiCamera/MiuiCamera.apk:system/priv-app/MiuiCamera/MiuiCamera.apk;OVERRIDES=GrapheneCamera,Camera,Camera2,Flash,Aperture
 system/priv-app/MiuiVideoPlayer/MiuiVideoPlayer.apk
-system/lib64/libcamera_algoup_jni.xiaomi.so
-system/lib64/libcamera_mianode_jni.xiaomi.so
-system/lib64/libmicampostproc_client.so
-system/lib64/vendor.xiaomi.hardware.campostproc@1.0.so
+system_ext/lib64/libcamera_algoup_jni.xiaomi.so:system/lib64/libcamera_algoup_jni.xiaomi.so
+system_ext/lib64/libcamera_mianode_jni.xiaomi.so:system/lib64/libcamera_mianode_jni.xiaomi.so
+system_ext/lib64/libmicampostproc_client.so:system/lib64/libmicampostproc_client.so
+vendor/lib64/vendor.xiaomi.hardware.campostproc@1.0.so:system/lib64/vendor.xiaomi.hardware.campostproc@1.0.so
 system_ext/lib64/libopencl-camera.so:system/lib64/libOpenCL.so
