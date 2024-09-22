@@ -5,13 +5,12 @@
 PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/redwood-miuicamera/common
 
-PRODUCT_COPY_FILES += \
-    vendor/xiaomi/redwood-miuicamera/common/proprietary/system/lib64/libcamera_algoup_jni.xiaomi.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libcamera_algoup_jni.xiaomi.so \
-    vendor/xiaomi/redwood-miuicamera/common/proprietary/system/lib64/libcamera_mianode_jni.xiaomi.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libcamera_mianode_jni.xiaomi.so \
-    vendor/xiaomi/redwood-miuicamera/common/proprietary/system/lib64/libmicampostproc_client.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmicampostproc_client.so \
-    vendor/xiaomi/redwood-miuicamera/common/proprietary/system/lib64/libOpenCL.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libOpenCL.so \
-    vendor/xiaomi/redwood-miuicamera/common/proprietary/system/lib64/vendor.xiaomi.hardware.campostproc@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.xiaomi.hardware.campostproc@1.0.so
 
 PRODUCT_PACKAGES += \
+    libOpenCL \
+    libcamera_algoup_jni.xiaomi \
+    libcamera_mianode_jni.xiaomi \
+    libmicampostproc_client \
+    vendor.xiaomi.hardware.campostproc@1.0 \
     MiuiCamera \
     MiuiVideoPlayer
