@@ -8,22 +8,6 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
-	name: "libOpenCL",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/system/lib64/libOpenCL.so"],
-			shared_libs: ["libcutils", "libvndksupport", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libcamera_algoup_jni.xiaomi",
 	owner: "xiaomi",
 	strip: {

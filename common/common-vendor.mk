@@ -7,7 +7,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 
 PRODUCT_PACKAGES += \
-    libOpenCL \
     libcamera_algoup_jni.xiaomi \
     libcamera_mianode_jni.xiaomi \
     libmicampostproc_client \
