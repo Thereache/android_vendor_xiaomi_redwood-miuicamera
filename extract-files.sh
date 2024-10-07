@@ -65,6 +65,10 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
 			"${PATCHELF}" --remove-needed libhidltransport.so "${2}"
             ;;
+        system/priv-app/MiuiCamera/MiuiCamera.apk | system/priv-app/MiuiVideoPlayer/MiuiVideoPlayer.apk)
+            [ "$2" = "" ] && return 0
+            split --bytes=20M -d "$2" "$2".part
+            ;;
         *)
             return 1
             ;;
